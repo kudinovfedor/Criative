@@ -22,19 +22,19 @@
 
     <div class="footer-info">
         <div class="row">
-            <div class="col-md-2 text-left">
+            <div class="col-lg-2 footer-logo text-left">
                 <div class="logo"><?php get_default_logo_link(); ?></div>
             </div>
-            <div class="col-md-8 footer-details text-center">
-                <div class="row footer-">
+            <div class="col-lg-8 footer-details text-center">
+                <div class="row">
                     <?php if ( ! empty($address)) { ?>
-                        <div class="col-md-4">
+                        <div class="col-sm-6 col-md-4 col-lg-4">
                             <b><?php _e('Address', 'brainworks'); ?>:</b>
                             <?php echo esc_html($address); ?>
                         </div>
                     <?php }
                     if (has_phones()) { ?>
-                        <div class="col-md-4">
+                        <div class="col-sm-6 col-md-4 col-lg-4">
                             <b><?php _e('Telephone', 'brainworks'); ?>:</b>
                             <ul class="phone">
                                 <?php foreach (get_phones() as $phone) { ?>
@@ -49,14 +49,14 @@
                         </div>
                     <?php }
                     if ( ! empty($email)) { ?>
-                        <div class="col-md-4">
+                        <div class="col-sm-12 col-md-4 col-lg-4">
                             <b><?php _e('Email', 'brainworks'); ?>:</b>
                             <a href="mailto:<?php echo esc_attr($email); ?>"><?php echo esc_html($email); ?></a>
                         </div>
                     <?php } ?>
                 </div>
             </div>
-            <div class="col-md-2 footer-social text-right">
+            <div class="col-lg-2 footer-social text-right">
                 <?php if (has_social()) { ?>
                     <ul class="social">
                         <?php foreach (get_social() as $social) { ?>

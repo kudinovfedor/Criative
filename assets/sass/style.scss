@@ -200,7 +200,7 @@ img {
         }
 
         &-nav {
-            padding-top: 0px;
+            padding-top: 0;
         }
     }
 
@@ -208,6 +208,29 @@ img {
         .menu-link {
             padding-top: 5px;
             padding-bottom: 5px;
+        }
+    }
+
+    .footer {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &,
+        &-logo,
+        &-details,
+        &-social {
+            text-align: center;
+        }
+
+        &-details,
+        &-social {
+            padding-top: 10px;
+        }
+
+        &-details {
+            b {
+                display: block;
+            }
         }
     }
 }

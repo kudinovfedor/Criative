@@ -4375,13 +4375,13 @@ hr.style-four {
   padding: 5px 60px;
   background-color: #232323; }
   .header.is-front {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgba(35, 35, 35, 0.3); }
+    background-color: transparent; }
   .header,
   .header .fa,
   .header .phone-number {
@@ -4597,10 +4597,19 @@ img {
     .header, .header-nav {
       text-align: center; }
     .header-nav {
-      padding-top: 0px; }
+      padding-top: 0; }
   .nav .menu-link {
     padding-top: 5px;
-    padding-bottom: 5px; } }
+    padding-bottom: 5px; }
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .footer, .footer-logo, .footer-details, .footer-social {
+      text-align: center; }
+    .footer-details, .footer-social {
+      padding-top: 10px; }
+    .footer-details b {
+      display: block; } }
 
 @media only screen and (max-width: 544px) {
   .on-mobile-hide {
