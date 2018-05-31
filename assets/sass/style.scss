@@ -212,14 +212,16 @@ img {
     }
 
     .footer {
-        padding-left: 15px;
-        padding-right: 15px;
-
         &,
         &-logo,
         &-details,
         &-social {
             text-align: center;
+        }
+
+        &-info {
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
         &-details,
