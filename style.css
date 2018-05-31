@@ -4061,7 +4061,7 @@ hr.style-four {
     border-bottom: 1px solid #232323;
     background-color: #232323;
     text-align: left;
-    z-index: 99; }
+    z-index: 95; }
     .nav-mobile-header img {
       max-height: 50px; }
     .nav-mobile-header .hamburger {
@@ -4372,7 +4372,7 @@ hr.style-four {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 96;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: transparent; }
@@ -4609,9 +4609,12 @@ img {
   .on-mobile-hide {
     display: none; }
   .header {
-    padding: 10px 15px; }
+    padding: 0 !important; }
     .header-phone {
+      display: none;
       padding-top: 0; }
     .header-nav {
-      padding-top: 10px;
-      text-align: center; } }
+      padding-top: 0;
+      text-align: center; }
+    .header-btn {
+      display: none; } }

@@ -186,6 +186,7 @@ img {
         }
     }
 }
+
 @media only screen and (max-width: 1024px) {
     .header {
         padding: 10px 0;
@@ -245,15 +246,20 @@ img {
     }
 
     .header {
-        padding: 10px 15px;
+        padding: 0 !important;
 
         &-phone {
+            display: none;
             padding-top: 0;
         }
 
         &-nav {
-            padding-top: 10px;
+            padding-top: 0;
             text-align: center;
+        }
+
+        &-btn {
+            display: none;
         }
     }
 }
