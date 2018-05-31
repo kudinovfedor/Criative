@@ -3,7 +3,7 @@
  * All the functions are in the PHP pages in the `inc/` folder.
  */
 
-//show_admin_bar(false);
+show_admin_bar(false);
 
 require_once locate_template('/inc/helpers.php');
 require_once locate_template('/inc/admin.php');
@@ -21,3 +21,17 @@ require_once locate_template('/inc/index-pagination.php');
 require_once locate_template('/inc/split-post-pagination.php');
 require_once locate_template('/inc/feedback.php');
 require_once locate_template('/inc/shortcodes.php');
+
+if ( ! function_exists('dump')) {
+    /** Dump
+     *
+     * @param mixed $expression
+     * @return void
+     */
+    function dump($expression)
+    {
+        echo '<pre>';
+        var_dump($expression);
+        echo '</pre>';
+    }
+}

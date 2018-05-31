@@ -293,11 +293,13 @@ if ( ! function_exists('get_default_logo_link')) {
     /**
      * Display site logo
      *
+     * @param bool $use_svg
+     *
      * @return void
      */
-    function get_default_logo_link()
+    function get_default_logo_link($use_svg = false)
     {
-        $desc = sprintf('<span class="logo-desc">%s</span>', get_bloginfo('description'));
+        $desc = sprintf('<span class="logo-desc screen-reader-text">%s</span>', get_bloginfo('description'));
 
         if (has_custom_logo()) {
 
@@ -308,7 +310,11 @@ if ( ! function_exists('get_default_logo_link')) {
 
             $file = get_template_directory_uri() . '/assets/img/logo.png';
 
-            $img = sprintf('<img class="logo-img" src="%s" alt="%s">', esc_url($file), get_bloginfo('name'));
+            if($use_svg) {
+                $img = sprintf('<svg class="svg-icon" width="135" height="89" aria-label="%s"><use xlink:href="#logo"></use></svg>', get_bloginfo('name'));
+            } else {
+                $img = sprintf('<img class="logo-img" src="%s" alt="%s">', esc_url($file), get_bloginfo('name'));
+            }
 
             $link = sprintf('<a class="logo-link" href="%s">%s</a>', esc_url(home_url('/')), $img);
 

@@ -14,7 +14,7 @@ function theme_mod($name, $default = false)
 }
 
 /**
- * @param $wp_customize
+ * @param $wp_customize WP_Customize_Manager
  */
 function bw_customize_register($wp_customize)
 {
@@ -356,6 +356,62 @@ function bw_customize_register($wp_customize)
         'section'     => 'bw_login',
         'settings'    => 'bw_login_logo',
     )));
+
+    // Section Additional
+    $wp_customize->add_section('bw_additional', array(
+        'title'       => 'Additional',
+        'description' => 'Additional links',
+        'panel'       => 'bw_theme_options',
+    ));
+
+    $wp_customize->add_setting('bw_additional_address', array('default' => '#'));
+    $wp_customize->add_setting('bw_additional_email', array('default' => '#'));
+    $wp_customize->add_setting('bw_additional_skype', array('default' => '#'));
+    $wp_customize->add_setting('bw_additional_viber', array('default' => '#'));
+    $wp_customize->add_setting('bw_additional_whatsapp', array('default' => '#'));
+    $wp_customize->add_setting('bw_additional_telegram', array('default' => '#'));
+
+    $wp_customize->add_control('bw_additional_address', array(
+        'label'    => 'Address',
+        'section'  => 'bw_additional',
+        'settings' => 'bw_additional_address',
+        'type'     => 'text',
+    ));
+
+    $wp_customize->add_control('bw_social_email', array(
+        'label'    => 'Email',
+        'section'  => 'bw_additional',
+        'settings' => 'bw_additional_email',
+        'type'     => 'email',
+    ));
+
+    $wp_customize->add_control('bw_additional_skype', array(
+        'label'    => 'Skype',
+        'section'  => 'bw_additional',
+        'settings' => 'bw_additional_skype',
+        'type'     => 'text',
+    ));
+
+    $wp_customize->add_control('bw_additional_viber', array(
+        'label'    => 'Viber',
+        'section'  => 'bw_additional',
+        'settings' => 'bw_additional_viber',
+        'type'     => 'text',
+    ));
+
+    $wp_customize->add_control('bw_additional_whatsapp', array(
+        'label'    => 'WhatsApp',
+        'section'  => 'bw_additional',
+        'settings' => 'bw_additional_whatsapp',
+        'type'     => 'text',
+    ));
+
+    $wp_customize->add_control('bw_additional_telegram', array(
+        'label'    => 'Telegram',
+        'section'  => 'bw_additional',
+        'settings' => 'bw_additional_telegram',
+        'type'     => 'text',
+    ));
 
     // Section Social
     $wp_customize->add_section('bw_social', array(

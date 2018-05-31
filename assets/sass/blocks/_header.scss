@@ -10,6 +10,37 @@
     color: $headerFontColor;
 }
 
+.header {
+    padding: 5px 60px;
+    background-color: $headerBgColor;
+
+    &.is-front {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgba($headerBgColor, .3);
+    }
+
+    &,
+    .fa,
+    .phone-number {
+        color: $headerFontColor;
+        font-size: 14px;
+        line-height: (24/14);
+    }
+
+    &-phone {
+        padding-top: 28px;
+    }
+
+    &-nav {
+        padding-top: 20px;
+    }
+}
+
 .logo {
     &,
     &-link,
@@ -21,6 +52,7 @@
 
 .phone {
     @extend %reset-list;
+    font-size: 0;
 
     &,
     &-item {
@@ -35,6 +67,8 @@
     &-number {
         display: inline-block;
         text-decoration: none;
+        font-size: 14px;
+        line-height: (24/14);
 
         &:hover {
             text-decoration: underline;
@@ -44,6 +78,7 @@
 
 .social {
     @extend %reset-list;
+    font-size: 0;
 
     &,
     &-item {
@@ -52,15 +87,28 @@
     }
 
     &-item {
-        margin: 0 5px;
+        margin: 0 7px;
     }
 
     &-link {
         display: block;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
         text-align: center;
         text-decoration: none;
+        background-color: #e15b56;
+        @include border-radius(50%);
+        @extend %smooth_animation;
+
+        &,
+        .fa {
+            color: #fff;
+            font-size: 18px;
+        }
 
         &:hover {
+            background-color: darken(#e15b56, 5%);
         }
     }
 }

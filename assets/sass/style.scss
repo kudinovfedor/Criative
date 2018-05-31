@@ -37,8 +37,8 @@ Tags: one-column, two-columns, full-width-template, e-commerce
 @import "elements/responsive-titles";
 @import "elements/scroll-top";
 @import "elements/forms";
-//@import "elements/buttons";
-@import "elements/buttons-2";
+@import "elements/buttons";
+//@import "elements/buttons-2";
 //@import "elements/images";
 @import "elements/links";
 @import "elements/pagination";
@@ -99,7 +99,7 @@ body {
     min-height: 100%;
 
     @media #{$mobile} {
-        padding-top: 80px;
+        padding-top: 70px;
     }
 }
 
@@ -163,4 +163,72 @@ img {
 
 .is-hide {
     display: none;
+}
+
+@media only screen and (max-width: 1540px) {
+    .header-phone {
+        padding-top: 20px;
+
+        .fa-phone {
+            display: none;
+        }
+    }
+
+    .nav {
+        .menu-item {
+            padding: 0;
+        }
+
+        .menu-link {
+            padding-top: 0;
+            padding-bottom: 0;
+            text-transform: none;
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .header {
+        padding: 10px 0;
+
+        &-phone {
+            padding-top: 10px;
+        }
+
+        &,
+        &-nav {
+            text-align: center;
+        }
+
+        &-nav {
+            padding-top: 0px;
+        }
+    }
+
+    .nav {
+        .menu-link {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 544px) {
+    .on-mobile-hide {
+        display: none;
+    }
+
+    .header {
+        padding: 10px 15px;
+
+        &-phone {
+            padding-top: 0;
+        }
+
+        &-nav {
+            padding-top: 10px;
+            text-align: center;
+        }
+    }
 }

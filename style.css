@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: brainworks-v4.8.1
+Theme Name: creative
 Theme URI:
 Text Domain: brainworks
 Author: Brain Works
@@ -8,11 +8,11 @@ Author URI: http://brainworks.com.ua
 Description:
 License:
 License URI:
-Version: 4.8.1
+Version: 1.0.0
 Tags: one-column, two-columns, full-width-template, e-commerce
 */
 /* CORE */
-@import url("https://fonts.googleapis.com/css?family=Comfortaa|Lobster&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,900&amp;subset=cyrillic");
 html,
 body,
 div,
@@ -2616,7 +2616,7 @@ a img.aligncenter {
   overflow: visible;
   clip: auto; }
 
-a, .fa, .main-nav .menu-container .current-menu-item:after, .main-nav .menu-container .menu-item a, .main-nav .menu-container .menu-item-has-children .sub-menu .menu-item a, .nav .menu-link, .nav .sub-menu, .nav .sub-menu-link, .svg-icon {
+a, .fa, .main-nav .menu-container .current-menu-item:after, .main-nav .menu-container .menu-item a, .main-nav .menu-container .menu-item-has-children .sub-menu .menu-item a, .nav .menu-link, .nav .sub-menu, .nav .sub-menu-link, .social-link, .svg-icon {
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
   -webkit-transition: 0.2s;
@@ -3234,7 +3234,7 @@ article header p {
 /* ELEMENTS */
 h1, h2, h3, h4, h5, h6, h1.hero-title {
   color: #4b4b4b;
-  font-family: "Arial", "Helvetica", sans-serif; }
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1.hero-title a {
     color: #4b4b4b; }
     h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, h1.hero-title a:hover {
@@ -3490,17 +3490,14 @@ form fieldset {
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;
-    border: 0;
+    border: 1px solid transparent;
     border-radius: 4px;
-    background-color: #0027ff;
+    background-color: #e15b56;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
     font-family: inherit;
-    font-weight: 700;
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    font-weight: 600;
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
     -webkit-transition: 0.2s;
@@ -3510,15 +3507,9 @@ form fieldset {
       font-family: FontAwesome; }
     form fieldset input[type="submit"]:hover {
       color: #fff;
-      background-color: #3352ff;
-      -moz-box-shadow: none;
-      -webkit-box-shadow: none;
-      box-shadow: none; }
+      background-color: #d9312b; }
     form fieldset input[type="submit"]:active {
-      background-color: #0027ff;
-      -moz-box-shadow: none;
-      -webkit-box-shadow: none;
-      box-shadow: none; }
+      background-color: #e15b56; }
     form fieldset input[type="submit"]:focus {
       outline: 0; }
   form fieldset textarea {
@@ -3573,28 +3564,51 @@ form fieldset {
 .woocommerce input.button:disabled[disabled],
 .woocommerce input.button:disabled[disabled]:hover, .woocommerce a.button.alt,
 .woocommerce button.button.alt,
-.woocommerce input.button.alt {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 4px;
-  font-family: "Arial", "Helvetica", sans-serif;
-  height: auto;
+.woocommerce input.button.alt, .button-style, .button-large, .button-medium, .button-small, .button-inverse, button[type="submit"] {
   cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0027ff;
-  background-color: #fff;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0027ff;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; }
-  .woocommerce #respond input#submit a, .woocommerce #respond input#submit.alt a, .woocommerce a.button a, .woocommerce a.button.disabled a, .woocommerce a.button.disabled:hover a, .woocommerce a.button:disabled a, .woocommerce a.button:disabled:hover a, .woocommerce a.button:disabled[disabled] a, .woocommerce a.button:disabled[disabled]:hover a, .woocommerce button.button a, .woocommerce button.button.disabled a, .woocommerce button.button.disabled:hover a, .woocommerce button.button:disabled a, .woocommerce button.button:disabled:hover a, .woocommerce button.button:disabled[disabled] a, .woocommerce button.button:disabled[disabled]:hover a, .woocommerce input.button a, .woocommerce input.button.disabled a, .woocommerce input.button.disabled:hover a, .woocommerce input.button:disabled a, .woocommerce input.button:disabled:hover a, .woocommerce input.button:disabled[disabled] a, .woocommerce input.button:disabled[disabled]:hover a, .woocommerce a.button.alt a, .woocommerce button.button.alt a, .woocommerce input.button.alt a {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #e15b56;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 600;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .woocommerce #respond input.fa#submit, .woocommerce a.fa.button, .woocommerce a.fa.button.disabled:hover, .woocommerce a.fa.button:disabled:hover, .woocommerce a.fa.button:disabled[disabled],
+  .woocommerce button.fa.button,
+  .woocommerce button.fa.button.disabled:hover,
+  .woocommerce button.fa.button:disabled:hover,
+  .woocommerce button.fa.button:disabled[disabled],
+  .woocommerce input.fa.button,
+  .woocommerce input.fa.button.disabled:hover,
+  .woocommerce input.fa.button:disabled:hover,
+  .woocommerce input.fa.button:disabled[disabled], .fa.button-style, .fa.button-large, .fa.button-medium, .fa.button-small, .fa.button-inverse, button.fa[type="submit"] {
+    font-family: FontAwesome; }
+  .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce a.button.disabled:hover, .woocommerce a.button:hover:disabled[disabled],
+  .woocommerce button.button:hover,
+  .woocommerce button.button.disabled:hover,
+  .woocommerce button.button:hover:disabled[disabled],
+  .woocommerce input.button:hover,
+  .woocommerce input.button.disabled:hover,
+  .woocommerce input.button:hover:disabled[disabled], .button-style:hover, .button-large:hover, .button-medium:hover, .button-small:hover, .button-inverse:hover, button:hover[type="submit"] {
     color: #fff;
-    display: inline-block; }
-  .woocommerce #respond input#submit span, .woocommerce #respond input#submit.alt span, .woocommerce a.button span, .woocommerce a.button.disabled span, .woocommerce a.button.disabled:hover span, .woocommerce a.button:disabled span, .woocommerce a.button:disabled:hover span, .woocommerce a.button:disabled[disabled] span, .woocommerce a.button:disabled[disabled]:hover span, .woocommerce button.button span, .woocommerce button.button.disabled span, .woocommerce button.button.disabled:hover span, .woocommerce button.button:disabled span, .woocommerce button.button:disabled:hover span, .woocommerce button.button:disabled[disabled] span, .woocommerce button.button:disabled[disabled]:hover span, .woocommerce input.button span, .woocommerce input.button.disabled span, .woocommerce input.button.disabled:hover span, .woocommerce input.button:disabled span, .woocommerce input.button:disabled:hover span, .woocommerce input.button:disabled[disabled] span, .woocommerce input.button:disabled[disabled]:hover span, .woocommerce a.button.alt span, .woocommerce button.button.alt span, .woocommerce input.button.alt span {
-    color: #fff;
-    display: inline-block; }
+    background-color: #d9312b; }
+  .woocommerce #respond input#submit:active, .woocommerce a.button:active, .woocommerce a.button.disabled:active:hover, .woocommerce a.button:active:disabled:hover, .woocommerce a.button:active:disabled[disabled],
+  .woocommerce button.button:active,
+  .woocommerce button.button.disabled:active:hover,
+  .woocommerce button.button:active:disabled:hover,
+  .woocommerce button.button:active:disabled[disabled],
+  .woocommerce input.button:active,
+  .woocommerce input.button.disabled:active:hover,
+  .woocommerce input.button:active:disabled:hover,
+  .woocommerce input.button:active:disabled[disabled], .button-style:active, .button-large:active, .button-medium:active, .button-small:active, .button-inverse:active, button:active[type="submit"] {
+    background-color: #e15b56; }
   .woocommerce #respond input#submit:focus, .woocommerce a.button:focus, .woocommerce a.button.disabled:focus:hover, .woocommerce a.button:focus:disabled:hover, .woocommerce a.button:focus:disabled[disabled],
   .woocommerce button.button:focus,
   .woocommerce button.button.disabled:focus:hover,
@@ -3603,51 +3617,14 @@ form fieldset {
   .woocommerce input.button:focus,
   .woocommerce input.button.disabled:focus:hover,
   .woocommerce input.button:focus:disabled:hover,
-  .woocommerce input.button:focus:disabled[disabled] {
+  .woocommerce input.button:focus:disabled[disabled], .button-style:focus, .button-large:focus, .button-medium:focus, .button-small:focus, .button-inverse:focus, button:focus[type="submit"] {
     outline: 0; }
-  .woocommerce #respond input.button-inverse#submit, .woocommerce a.button-inverse.button, .woocommerce a.button-inverse.button.disabled:hover, .woocommerce a.button-inverse.button:disabled:hover, .woocommerce a.button-inverse.button:disabled[disabled],
-  .woocommerce button.button-inverse.button,
-  .woocommerce button.button-inverse.button.disabled:hover,
-  .woocommerce button.button-inverse.button:disabled:hover,
-  .woocommerce button.button-inverse.button:disabled[disabled],
-  .woocommerce input.button-inverse.button,
-  .woocommerce input.button-inverse.button.disabled:hover,
-  .woocommerce input.button-inverse.button:disabled:hover,
-  .woocommerce input.button-inverse.button:disabled[disabled] {
-    background: #0027ff;
-    color: #fff; }
-    .woocommerce #respond input.button-inverse#submit:hover, .woocommerce a.button-inverse.button:hover,
-    .woocommerce button.button-inverse.button:hover,
-    .woocommerce input.button-inverse.button:hover, .woocommerce #respond input.button-inverse#submit:active, .woocommerce a.button-inverse.button:active, .woocommerce a.button-inverse.button:active:disabled[disabled]:hover,
-    .woocommerce button.button-inverse.button:active,
-    .woocommerce button.button-inverse.button:active:disabled[disabled]:hover,
-    .woocommerce input.button-inverse.button:active,
-    .woocommerce input.button-inverse.button:active:disabled[disabled]:hover {
-      color: #0027ff;
-      background: #fff; }
-  .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce a.button.disabled:hover, .woocommerce a.button:hover:disabled[disabled],
-  .woocommerce button.button:hover,
-  .woocommerce button.button.disabled:hover,
-  .woocommerce button.button:hover:disabled[disabled],
-  .woocommerce input.button:hover,
-  .woocommerce input.button.disabled:hover,
-  .woocommerce input.button:hover:disabled[disabled], .woocommerce #respond input#submit:active, .woocommerce a.button:active, .woocommerce a.button.disabled:active:hover, .woocommerce a.button:active:disabled:hover, .woocommerce a.button:active:disabled[disabled],
-  .woocommerce button.button:active,
-  .woocommerce button.button.disabled:active:hover,
-  .woocommerce button.button:active:disabled:hover,
-  .woocommerce button.button:active:disabled[disabled],
-  .woocommerce input.button:active,
-  .woocommerce input.button.disabled:active:hover,
-  .woocommerce input.button:active:disabled:hover,
-  .woocommerce input.button:active:disabled[disabled] {
-    background-color: #0027ff;
-    color: #fff; }
 
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover,
 .woocommerce button.button.alt:hover,
 .woocommerce input.button.alt:hover {
   color: #fff;
-  background-color: #3352ff;
+  background-color: #d9312b;
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
@@ -3655,7 +3632,7 @@ form fieldset {
 .woocommerce #respond input#submit.alt:active, .woocommerce a.button.alt:active,
 .woocommerce button.button.alt:active,
 .woocommerce input.button.alt:active {
-  background-color: #0027ff;
+  background-color: #e15b56;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none; }
@@ -3665,262 +3642,95 @@ form fieldset {
 .woocommerce input.button.alt:focus {
   outline: 0; }
 
-.button-style {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 4px;
-  font-family: "Arial", "Helvetica", sans-serif;
-  height: auto;
-  cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0027ff;
-  background-color: #fff;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0027ff;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; }
-  .button-style a {
-    color: #fff;
-    display: inline-block; }
-  .button-style span {
-    color: #fff;
-    display: inline-block; }
-  .button-style:focus {
-    outline: 0; }
-  .button-style.button-inverse {
-    background: #0027ff;
-    color: #fff; }
-    .button-style.button-inverse:hover, .button-style.button-inverse:active {
-      color: #0027ff;
-      background: #fff; }
-  .button-style:hover, .button-style:active {
-    background-color: #0027ff;
-    color: #fff; }
+button {
+  cursor: pointer; }
 
-.button-large,
-button.button,
-a.button {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 4px;
-  font-family: "Arial", "Helvetica", sans-serif;
-  height: auto;
-  cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0027ff;
-  background-color: #fff;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0027ff;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  padding: 15px 60px;
-  font-size: 20px; }
-  .button-large a,
-  button.button a,
-  a.button a {
-    color: #fff;
-    display: inline-block; }
-  .button-large span,
-  button.button span,
-  a.button span {
-    color: #fff;
-    display: inline-block; }
-  .button-large:focus,
-  button.button:focus,
-  a.button:focus {
-    outline: 0; }
-  .button-large.button-inverse,
-  button.button.button-inverse,
-  a.button.button-inverse {
-    background: #0027ff;
-    color: #fff; }
-    .button-large.button-inverse:hover, .button-large.button-inverse:active,
-    button.button.button-inverse:hover,
-    button.button.button-inverse:active,
-    a.button.button-inverse:hover,
-    a.button.button-inverse:active {
-      color: #0027ff;
-      background: #fff; }
-  .button-large:hover, .button-large:active,
-  button.button:hover,
-  button.button:active,
-  a.button:hover,
-  a.button:active {
-    background-color: #0027ff;
-    color: #fff; }
+.button-large {
+  padding: 16px 60px;
+  font-size: 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px; }
 
 .button-medium {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 4px;
-  font-family: "Arial", "Helvetica", sans-serif;
-  height: auto;
-  cursor: pointer;
+  padding: 10px 25px;
   font-size: 16px;
-  border: 1px solid #0027ff;
-  background-color: #fff;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0027ff;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  padding: 14px 25px;
-  font-size: 16px; }
-  .button-medium a {
-    color: #fff;
-    display: inline-block; }
-  .button-medium span {
-    color: #fff;
-    display: inline-block; }
-  .button-medium:focus {
-    outline: 0; }
-  .button-medium.button-inverse {
-    background: #0027ff;
-    color: #fff; }
-    .button-medium.button-inverse:hover, .button-medium.button-inverse:active {
-      color: #0027ff;
-      background: #fff; }
-  .button-medium:hover, .button-medium:active {
-    background-color: #0027ff;
-    color: #fff; }
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px; }
 
 .button-small {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 4px;
-  font-family: "Arial", "Helvetica", sans-serif;
-  height: auto;
-  cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0027ff;
-  background-color: #fff;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0027ff;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   padding: 10px 15px;
-  font-size: 14px; }
-  .button-small a {
+  font-size: 14px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px; }
+
+.button-inverse {
+  color: #fff;
+  background-color: #d9312b; }
+  .button-inverse:hover, .button-inverse:active {
     color: #fff;
-    display: inline-block; }
-  .button-small span {
-    color: #fff;
-    display: inline-block; }
-  .button-small:focus {
-    outline: 0; }
-  .button-small.button-inverse {
-    background: #0027ff;
-    color: #fff; }
-    .button-small.button-inverse:hover, .button-small.button-inverse:active {
-      color: #0027ff;
-      background: #fff; }
-  .button-small:hover, .button-small:active {
-    background-color: #0027ff;
-    color: #fff; }
+    background-color: #e15b56; }
+
+.button-block {
+  display: block;
+  width: 100%; }
 
 button[type="submit"] {
-  top: 0;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border-radius: 4px;
-  font-family: "Arial", "Helvetica", sans-serif;
-  height: auto;
-  cursor: pointer;
-  font-size: 16px;
-  border: 1px solid #0027ff;
-  background-color: #fff;
-  box-shadow: none;
-  line-height: 1 !important;
-  color: #0027ff;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  padding: 5px 10px; }
-  button[type="submit"] a {
-    color: #fff;
-    display: inline-block; }
-  button[type="submit"] span {
-    color: #fff;
-    display: inline-block; }
-  button[type="submit"]:focus {
-    outline: 0; }
-  button[type="submit"].button-inverse {
-    background: #0027ff;
-    color: #fff; }
-    button[type="submit"].button-inverse:hover, button[type="submit"].button-inverse:active {
-      color: #0027ff;
-      background: #fff; }
-  button[type="submit"]:hover, button[type="submit"]:active {
-    background-color: #0027ff;
-    color: #fff; }
+  padding: 8px 10px; }
 
 @media (max-width: 544px) {
-  .button-large,
-  button.button,
-  a.button {
-    padding: 10px 45px;
+  .button-large {
+    padding: 11px 45px;
     font-size: 12px; }
   .button-medium {
-    padding: 9px 22px;
+    padding: 10px 15px;
     font-size: 10px; }
   .button-small {
     padding: 6px 12px;
     font-size: 8px; } }
 
 @media (min-width: 545px) and (max-width: 768px) {
-  .button-large,
-  button.button,
-  a.button {
-    padding: 10px 50px;
+  .button-large {
+    padding: 12px 50px;
     font-size: 13px; }
   .button-medium {
-    padding: 10px 25px;
-    font-size: 11px; }
+    padding: 10px 15px;
+    font-size: 12px; }
   .button-small {
     padding: 7px 14px;
     font-size: 9px; } }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .button-large,
-  button.button,
-  a.button {
-    padding: 10px 55px;
+  .button-large {
+    padding: 13px 55px;
     font-size: 14px; }
   .button-medium {
-    padding: 11px 28px;
+    padding: 10px 20px;
     font-size: 12px; }
   .button-small {
     padding: 8px 16px;
     font-size: 10px; } }
 
 @media (min-width: 1025px) and (max-width: 1366px) {
-  .button-large,
-  button.button,
-  a.button {
-    padding: 15px 60px;
+  .button-large {
+    padding: 14px 60px;
     font-size: 16px; }
   .button-medium {
-    padding: 12px 32px;
+    padding: 10px 20px;
     font-size: 14px; }
   .button-small {
     padding: 9px 18px;
     font-size: 12px; } }
 
 @media (min-width: 1367px) {
-  .button-large,
-  button.button,
-  a.button {
-    padding: 10px 65px;
+  .button-large {
+    padding: 15px 65px;
     font-size: 18px; }
   .button-medium {
-    padding: 13px 35px;
-    font-size: 15px; }
+    padding: 10px 25px;
+    font-size: 14px; }
   .button-small {
     padding: 10px 20px;
     font-size: 13px; } }
@@ -4255,8 +4065,8 @@ hr.style-four {
     padding: 10px 15px;
     top: 0;
     left: 0;
-    border-bottom: 1px solid #e7e7e7;
-    background-color: #fff;
+    border-bottom: 1px solid #232323;
+    background-color: #232323;
     text-align: left;
     z-index: 99; }
     .nav-mobile-header img {
@@ -4268,17 +4078,13 @@ hr.style-four {
 
 .nav {
   display: block;
-  position: relative;
-  margin: 10px 15px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
-  border-radius: 4px;
-  text-align: center; }
+  position: relative; }
   .nav .menu {
     font-size: 0; }
     .nav .menu-item {
       display: inline-block;
       vertical-align: middle;
-      padding: 5px; }
+      padding: 0 5px; }
       .nav .menu-item .menu-item-has-children-arrow {
         display: none; }
       .nav .menu-item-close {
@@ -4294,14 +4100,14 @@ hr.style-four {
         touch-action: manipulation; }
         .nav .menu-item-close:focus {
           outline: 0;
-          -moz-box-shadow: 0 0 0 4px rgba(25, 158, 199, 0.2);
-          -webkit-box-shadow: 0 0 0 4px rgba(25, 158, 199, 0.2);
-          box-shadow: 0 0 0 4px rgba(25, 158, 199, 0.2); }
+          -moz-box-shadow: 0 0 0 4px rgba(225, 91, 86, 0.2);
+          -webkit-box-shadow: 0 0 0 4px rgba(225, 91, 86, 0.2);
+          box-shadow: 0 0 0 4px rgba(225, 91, 86, 0.2); }
         .nav .menu-item-close::before, .nav .menu-item-close::after {
           content: '';
           width: 100%;
           height: 2px;
-          background-color: #199ec7;
+          background-color: #e15b56;
           position: absolute;
           top: 0;
           right: 0;
@@ -4335,7 +4141,7 @@ hr.style-four {
           border-color: #000 transparent transparent transparent;
           transition: transform 0.3s ease-in-out; }
       .no-touch .nav .menu-item:hover .menu-link, .nav .menu-item-current .menu-link, .nav .menu-item.current-menu-parent .menu-link, .nav .menu-item.current-menu-ancestor .menu-link {
-        text-decoration: none; }
+        text-decoration: underline; }
       .no-touch .nav .menu-item:hover > .sub-menu {
         top: 100%;
         visibility: visible;
@@ -4344,11 +4150,11 @@ hr.style-four {
     .nav .menu-link {
       display: block;
       padding: 8px 10px;
-      color: #000;
-      font-size: 16px;
-      line-height: 1.3;
+      color: #fff;
+      font-size: 14px;
+      line-height: 1.71429;
       text-align: center;
-      text-transform: none;
+      text-transform: uppercase;
       text-decoration: none; }
   .nav .sub-menu {
     position: absolute;
@@ -4410,9 +4216,9 @@ hr.style-four {
   transition: 0.2s ease-out; }
   .hamburger:focus {
     outline: 0;
-    -moz-box-shadow: 0 0 0 4px rgba(25, 158, 199, 0.2);
-    -webkit-box-shadow: 0 0 0 4px rgba(25, 158, 199, 0.2);
-    box-shadow: 0 0 0 4px rgba(25, 158, 199, 0.2); }
+    -moz-box-shadow: 0 0 0 4px rgba(225, 91, 86, 0.2);
+    -webkit-box-shadow: 0 0 0 4px rgba(225, 91, 86, 0.2);
+    box-shadow: 0 0 0 4px rgba(225, 91, 86, 0.2); }
   .hamburger, .hamburger[type="button"] {
     cursor: pointer;
     border: 0;
@@ -4432,7 +4238,7 @@ hr.style-four {
       display: block;
       width: 100%;
       height: 2px;
-      background-color: #199ec7; }
+      background-color: #e15b56; }
     .hamburger-inner::before, .hamburger-inner::after {
       content: '';
       position: absolute;
@@ -4481,7 +4287,7 @@ hr.style-four {
     width: 100%;
     height: 100%;
     margin: 0;
-    z-index: 100;
+    z-index: 101;
     overflow: auto;
     background-color: #333;
     will-change: transform;
@@ -4538,11 +4344,16 @@ hr.style-four {
       width: auto;
       display: none;
       visibility: visible;
+      background-color: #333;
       filter: alpha(opacity=100);
       opacity: 1;
       -moz-box-shadow: none;
       -webkit-box-shadow: none;
-      box-shadow: none; }
+      box-shadow: none;
+      -moz-transition: none;
+      -o-transition: none;
+      -webkit-transition: none;
+      transition: none; }
       .nav .sub-menu-item::after {
         display: none; }
       .nav .sub-menu-item .menu-item-has-children-arrow {
@@ -4557,37 +4368,74 @@ hr.style-four {
 
 .page-header {
   padding: 10px 0;
-  background-color: #4b4b4b;
-  color: #000; }
+  background-color: #232323;
+  color: #fff; }
+
+.header {
+  padding: 5px 60px;
+  background-color: #232323; }
+  .header.is-front {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(35, 35, 35, 0.3); }
+  .header,
+  .header .fa,
+  .header .phone-number {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.71429; }
+  .header-phone {
+    padding-top: 28px; }
+  .header-nav {
+    padding-top: 20px; }
 
 .logo, .logo-link, .logo-img {
   display: inline-block;
   vertical-align: middle; }
 
-.phone, .phone-item {
-  display: inline-block;
-  vertical-align: middle; }
+.phone {
+  font-size: 0; }
+  .phone, .phone-item {
+    display: inline-block;
+    vertical-align: middle; }
+  .phone-item {
+    margin: 0 5px; }
+  .phone-number {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71429; }
+    .phone-number:hover {
+      text-decoration: underline; }
 
-.phone-item {
-  margin: 0 5px; }
-
-.phone-number {
-  display: inline-block;
-  text-decoration: none; }
-  .phone-number:hover {
-    text-decoration: underline; }
-
-.social, .social-item {
-  display: inline-block;
-  vertical-align: middle; }
-
-.social-item {
-  margin: 0 5px; }
-
-.social-link {
-  display: block;
-  text-align: center;
-  text-decoration: none; }
+.social {
+  font-size: 0; }
+  .social, .social-item {
+    display: inline-block;
+    vertical-align: middle; }
+  .social-item {
+    margin: 0 7px; }
+  .social-link {
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #e15b56;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+    .social-link,
+    .social-link .fa {
+      color: #fff;
+      font-size: 18px; }
+    .social-link:hover {
+      background-color: #dd4640; }
 
 .lang, .lang-item {
   display: inline-block;
@@ -4603,21 +4451,26 @@ hr.style-four {
   right: 0;
   bottom: 0;
   left: 0; }
+  .footer .logo-img {
+    max-height: 65px; }
+  .footer-info {
+    border-top: 1px solid #232323;
+    padding: 5px 60px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1.71429;
+    color: #232323; }
+    .footer-info a:hover {
+      color: #161616;
+      text-decoration: underline; }
+  .footer-details {
+    padding-top: 25px; }
+  .footer-social {
+    padding-top: 20px; }
 
 .pre-footer {
   padding: 20px 0;
-  background-color: #656565; }
-
-.copyright {
-  padding: 14px 0;
-  background-color: #4b4b4b;
-  text-align: center;
-  color: #fff; }
-  .copyright a {
-    color: #fff;
-    text-decoration: underline; }
-    .copyright a:hover {
-      color: #bfbfbf; }
+  background-color: #6f6f6f; }
 
 .sidebar {
   margin-top: 20px; }
@@ -4666,7 +4519,7 @@ body {
   min-width: 320px;
   background-color: #fff;
   color: #000;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
   font-weight: 400; }
 
 .wrapper {
@@ -4675,7 +4528,7 @@ body {
   min-height: 100%; }
   @media (max-width: 544px) {
     .wrapper {
-      padding-top: 80px; } }
+      padding-top: 70px; } }
 
 strong,
 b {
@@ -4723,3 +4576,39 @@ img {
 
 .is-hide {
   display: none; }
+
+@media only screen and (max-width: 1540px) {
+  .header-phone {
+    padding-top: 20px; }
+    .header-phone .fa-phone {
+      display: none; }
+  .nav .menu-item {
+    padding: 0; }
+  .nav .menu-link {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-transform: none; } }
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    padding: 10px 0; }
+    .header-phone {
+      padding-top: 10px; }
+    .header, .header-nav {
+      text-align: center; }
+    .header-nav {
+      padding-top: 0px; }
+  .nav .menu-link {
+    padding-top: 5px;
+    padding-bottom: 5px; } }
+
+@media only screen and (max-width: 544px) {
+  .on-mobile-hide {
+    display: none; }
+  .header {
+    padding: 10px 15px; }
+    .header-phone {
+      padding-top: 0; }
+    .header-nav {
+      padding-top: 10px;
+      text-align: center; } }

@@ -3,25 +3,37 @@
     right: 0;
     bottom: 0;
     left: 0;
+
+    .logo-img {
+        max-height: 65px;
+    }
+
+    &-info {
+        border-top: 1px solid #232323;
+        padding: 5px 60px;
+        background-color: $footerBgColor;
+        font-size: 14px;
+        line-height: (24/14);
+        color: $footerFontColor;
+
+        a {
+            &:hover {
+                color: $footerLinkColorActive;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &-details {
+        padding-top: 25px;
+    }
+
+    &-social {
+        padding-top: 20px;
+    }
 }
 
 .pre-footer {
     padding: 20px 0;
-    background-color: lighten($footerBgColor, 10%);
-}
-
-.copyright {
-    padding: 14px 0;
-    background-color: $footerBgColor;
-    text-align: center;
-    color: $footerFontColor;
-
-    a {
-        color: $footerFontColor;
-        text-decoration: underline;
-
-        &:hover {
-            color: $footerLinkColorActive;
-        }
-    }
+    background-color: lighten(#555, 10%);
 }

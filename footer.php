@@ -11,12 +11,66 @@
         </div><!-- .pre-footer end-->
     <?php endif; ?>
 
-    <div class="copyright">
-        <p class="container">
-            <?php _e('Developed by', 'brainworks') ?>
-            <a href="https://brainworks.com.ua/" target="_blank">BRAIN WORKS</a>
-            &copy; <?php echo date('Y'); ?>
-        </p>
+    <?php
+    $email    = get_theme_mod('bw_additional_email');
+    $skype    = get_theme_mod('bw_additional_skype');
+    $viber    = get_theme_mod('bw_additional_viber');
+    $address  = get_theme_mod('bw_additional_address');
+    $whatsapp = get_theme_mod('bw_additional_whatsapp');
+    $telegram = get_theme_mod('bw_additional_telegram');
+    ?>
+
+    <div class="footer-info">
+        <div class="row">
+            <div class="col-md-2 text-left">
+                <div class="logo"><?php get_default_logo_link(); ?></div>
+            </div>
+            <div class="col-md-8 footer-details text-center">
+                <div class="row footer-">
+                    <?php if ( ! empty($address)) { ?>
+                        <div class="col-md-4">
+                            <b><?php _e('Address', 'brainworks'); ?>:</b>
+                            <?php echo esc_html($address); ?>
+                        </div>
+                    <?php }
+                    if (has_phones()) { ?>
+                        <div class="col-md-4">
+                            <b><?php _e('Telephone', 'brainworks'); ?>:</b>
+                            <ul class="phone">
+                                <?php foreach (get_phones() as $phone) { ?>
+                                    <li class="phone-item">
+                                        <a href="tel:<?php echo esc_attr(get_phone_number($phone)); ?>"
+                                           class="phone-number">
+                                            <?php echo esc_html($phone); ?>
+                                        </a>
+                                    </li>
+                                <?php } ?>
+                            </ul>
+                        </div>
+                    <?php }
+                    if ( ! empty($email)) { ?>
+                        <div class="col-md-4">
+                            <b><?php _e('Email', 'brainworks'); ?>:</b>
+                            <a href="mailto:<?php echo esc_attr($email); ?>"><?php echo esc_html($email); ?></a>
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+            <div class="col-md-2 footer-social text-right">
+                <?php if (has_social()) { ?>
+                    <ul class="social">
+                        <?php foreach (get_social() as $social) { ?>
+                            <li class="social-item">
+                                <a href="<?php echo esc_attr(esc_url($social['url'])); ?>" class="social-link" target="_blank">
+                                    <i class="fa <?php echo esc_attr($social['icon']); ?>" aria-hidden="true"
+                                       aria-label="<?php echo esc_attr($social['text']); ?>"></i>
+                                </a>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                <?php } ?>
+            </div>
+        </div>
     </div>
 </footer>
 
